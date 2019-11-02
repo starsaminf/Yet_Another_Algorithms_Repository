@@ -5,7 +5,7 @@ import "fmt"
 func SieveOfEratosthenes(n int) {
 	prime := make([]bool, n+1)
 
-	for i := 2; i*i < n; i++ {
+	for i := 2; i < n; i++ {
 		if prime[i] == true {
 			continue
 		}
